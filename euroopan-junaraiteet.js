@@ -31,16 +31,16 @@ class MapBoxComponent extends LitElement {
     mapboxgl.accessToken = MAPBOX_TOKEN;
   
     this.map = new mapboxgl.Map({
-      container: 'railroads-map',
+      container: 'junaraiteet-map',
       style: 'mapbox://styles/timor66/ckr32cq3pemln18qspaqpkqiq',
-      center: [14.5, 53.5],
-      zoom: 4
+      center: [24.94, 60.16],
+      zoom: 6
     });
   }
    
   render() {
     return html`
-      <div id="railroads-map"></div>
+      <div id="junaraiteet-map"></div>
     `;
   }
 } 
